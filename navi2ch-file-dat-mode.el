@@ -34,7 +34,7 @@
 (defvar navi2ch-file-dat-id-regexp
   "\\([[:alnum:]+/]+\\)")
 (defvar navi2ch-file-dat-id-face
-  'font-lock-type-face)
+  'font-lock-reference-face)
 
 ;;;; text
 (defvar navi2ch-file-dat-text-regexp
@@ -91,10 +91,10 @@
                               (6 ,navi2ch-file-dat-id-face)
                               (7 ,navi2ch-file-dat-text-face))
     (,navi2ch-file-dat-sep-regexp
-     (2 ,navi2ch-file-dat-sep-face append)
-     (4 ,navi2ch-file-dat-sep-face append)
-     (9 ,navi2ch-file-dat-sep-face append)
-     (11 ,navi2ch-file-dat-sep-face append))))
+     (2 ,navi2ch-file-dat-sep-face)
+     (4 ,navi2ch-file-dat-sep-face)
+     (9 ,navi2ch-file-dat-sep-face)
+     (11 ,navi2ch-file-dat-sep-face))))
 
 (define-generic-mode  'navi2ch-file-dat-mode   ;; name of the mode to create
   '() ;; comments start with
