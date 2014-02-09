@@ -38,8 +38,6 @@
             sep
             navi2ch-file-subject-text-regexp)))
 
-;; 9241311011.dat<>【924】盗まれた想い出。。。 (3)
-
 (defvar navi2ch-file-subject-font-lock-keywords
   `((,navi2ch-file-subject-regexp
      (1 ,navi2ch-file-subject-dat-face)
@@ -55,7 +53,8 @@
   '() ;; comments start with
   '() ;; some keywords
   navi2ch-file-subject-font-lock-keywords
-  '("\\.navi2ch\\/.+/subject\\.txt$") ;; files for which to activate this mode
+  '("\\.navi2ch\\/.+/subject\\.txt$"
+    "\\.navi2ch\\/.+/old-subject\\.txt$") ;; files for which to activate this mode
   nil                              ;; other functions to call
   "A mode for navi2ch subject.txt"            ;; doc string for this mode
   )
